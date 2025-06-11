@@ -1,0 +1,124 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease;
+    height: 100%;
+}
+
+.main-wrapper.light {
+    background-color: #f8f9fa;
+    color: #212529;
+    min-height: 100vh;
+}
+
+.main-wrapper.dark {
+    background-color: #121212;
+    color: #f1f1f1;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 700px;
+    padding: 30px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    background-color: white;
+}
+
+.dark .container {
+    background-color: #1e1e1e;
+}
+
+.list-group-item {
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    background-color: #fff;
+}
+
+.dark .list-group-item {
+    background-color: #2a2a2a;
+    color: #f8f9fa;
+}
+
+.list-group-item:hover {
+    transform: scale(1.01);
+}
+
+.theme-toggle-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.4rem;
+    padding: 8px 12px;
+    z-index: 10;
+}
+
+.theme-toggle-btn:hover {
+    background-color: #e2e6ea;
+}
+
+.dark .theme-toggle-btn:hover {
+    background-color: #495057;
+}
+
+input.form-control:focus,
+button:focus {
+    box-shadow: 0 0 5px #0d6efd;
+    outline: none;
+}
+
+.dark input {
+    background-color: #343a40;
+    color: white;
+    border: 1px solid #495057;
+}
+
+.light input {
+    background-color: white;
+    color: black;
+}
+
+.light input::placeholder {
+    color: #6c757d;
+}
+
+.dark input::placeholder {
+    color: #dee2e6;
+}
+
+input::placeholder {
+    transition: color 0.3s ease;
+}
+
+body.light,
+.light {
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+body.dark,
+.dark {
+    background-color: #121212;
+    color: #f1f1f1;
+}
+
+
+.main-wrapper {
+    transition: background-color 0.5s ease, color 0.5s ease;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+input,
+button,
+.list-group-item,
+.container {
+    transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
+}
