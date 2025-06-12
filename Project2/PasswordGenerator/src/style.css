@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family:unset;
+}
+
+body {
+  background-color: rgb(183, 182, 182);
+  font-size: 18px;
+  font-family: 'Montserrat';
+  color: rgb(212, 212, 212);
+  height: 100vh;
+}
+
+section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  height: 90vh;
+}
+
+h1{
+  font-size: 200%;
+  color: rgba(0, 0, 0, 0.837);
+  margin-bottom: 50px 100px;
+}
+
+.container {
+  padding: 30px;
+  background-color: #aaabab;
+  border-radius: 8px;
+  box-shadow: 3px 6px 10px #0000005b,-3px -6px 10px #fefefeb8;
+  width: 90%;
+  max-width: 400px;
+}
+
+form {
+  width: 100%;
+  font-size: 20px;
+}
+
+.result {
+  background-color: rgba(236, 237, 238, 0.553);
+  position: relative;
+  margin-bottom: 30px;
+  border-radius: 6px;
+  overflow: hidden;
+  padding-left: 5px;
+}
+
+.result #result {
+  width: 85%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 20px;
+  padding: 10px;
+}
+.result .clipboard {
+  width: 15%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 25px;
+  cursor: pointer;
+  background-color: rgb(73, 73, 73);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover{
+    background-color: white;
+    color: rgb(73, 73, 73);
+    transition-duration: 0.4s;
+  }
+}
+.field input[type='number'] {
+  width: 50px;
+  height: 40px;
+  outline: none;
+  border: none;
+  padding: 10px;
+  padding-right: 0px;
+  font-size: 16px;
+  background-color: rgb(139, 138, 138);
+  border-radius: 4px;
+}
+.field {
+  height: 40px;
+  margin-top: 5px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: center;
+  padding-right: 10px;
+  transition: 0.3s ease background-color;
+  color: rgb(41, 41, 41);
+  accent-color: rgb(66, 66, 66);
+}
+.field:first-of-type {
+  padding-right: 0;
+}
+.field:hover {
+  background-color: rgb(139, 138, 138);
+}
+.field label {
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+}
+.field input {
+  cursor: pointer;
+}
+
+button[type='submit'] {
+  display: inline-block;
+  width: 100%;
+  border: none;
+  outline: none;
+  height: 50px;
+  background-color: rgb(46, 47, 47);
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 30px;
+  border-radius: 6px;
+  &:hover{
+    background-color: white;
+    color: rgb(46, 47, 47);
+    transition-duration: 0.5s;
+  }
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 678px) {
+  .field {
+    font-size: 16px;
+  }
+}
